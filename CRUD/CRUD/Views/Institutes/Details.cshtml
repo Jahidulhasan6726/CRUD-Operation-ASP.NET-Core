@@ -1,0 +1,30 @@
+﻿@model CRUD.Models.Institute
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details Institue</h1>
+
+<div>
+
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.InstituteName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.InstituteName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Established)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Established)
+        </dd>
+    </dl>
+</div>
+
+<div>
+    <a asp-action="Edit" class="btn btn-success" asp-route-id="@Model?.InstituteId"><i class="fa fa-edit"></i></a> |
+    <a asp-action="Index" class="btn btn-info mt-2"><i class="fa fa-arrow-circle-left"></i>Back to List</a>
+</div>

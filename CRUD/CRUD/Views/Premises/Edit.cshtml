@@ -1,0 +1,65 @@
+﻿@model CRUD.Models.Premise
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<div class="row">
+    <div class="col">
+        <div class="card">
+            <h2 class="card-header display-4 text-center mt-2">Edit Campus Information</h2>
+        </div>
+        <form asp-action="Edit" asp-controller="Premises">
+            <div asp-validation-summary="ModelOnly" class="text-center"></div>
+            <input type="hidden" asp-for="PremiseId"/>
+            <div class="row mb-2">
+                <label asp-for="PrincipalName" class="col-form-label col-2 fw-bold fs-5"></label>
+                <div class="col-6">
+                    <input type="text" asp-for="PrincipalName" class="form-control form-control-sm"/>
+                </div>
+                <div class="col-4">
+                    <span asp-validation-for="PrincipalName" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="row mb-2">
+                <label asp-for="Address" class="col-form-label col-2 fw-bold fs-5"></label>
+                <div class="col-6">
+                    <input type="text" asp-for="Address" class="form-control form-control-sm" />
+                </div>
+                <div class="col-4">
+                    <span asp-validation-for="Address" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="row mb-2">
+                <label asp-for="Phone" class="col-form-label col-2 fw-bold fs-5"></label>
+                <div class="col-6">
+                    <input type="text" asp-for="Phone" class="form-control form-control-sm" />
+                </div>
+                <div class="col-4">
+                    <span asp-validation-for="Phone" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="row mb-2 mt-2">
+                <label asp-for="InstituteId" class="col-form-label col-sm fw-bold fs-5"></label>
+                <div class="col-6">
+                    <select class="form-select form-select-sm" asp-for="InstituteId" asp-items="@(new SelectList(ViewBag.institues,"InstituteId","InstitueName"))">
+                        <option value="" selected>----Select----</option>           
+
+                    </select>
+                </div>
+                <div class="col-4">
+                    <span asp-validation-for="InstituteId" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="row mb-2 mt-2">
+                <div class="col-10 offser-2">
+                    <input  type="submit" value="Update Date" class="btn btn-primary mt-2"/>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</div>
+<div>
+    <a asp-action="Index" class="btn btn-outline-warning"><i class="fa fa-arrow-circle-left"></i>Back to list</a>
+</div>
+

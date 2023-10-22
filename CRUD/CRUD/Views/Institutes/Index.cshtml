@@ -1,0 +1,41 @@
+﻿@model IEnumerable<CRUD.Models.Institute>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Institue Information</h1>
+
+<div class="d-flex justify-content-end">
+    <a asp-action="Create" asp-controller="Institutes" class="btn btn-primary btn-sm mb-2 me-2"><i class="fa fa-plus"></i>Create New</a>
+</div>
+<table class="table table-bordered table-striped table-sm">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.InstituteName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Established)
+            </th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.InstituteName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Established)
+            </td>
+            <td>
+                <a asp-action="Edit" class="btn btn-outline-success btn-sm" asp-route-id="@item.InstituteId"><i class="fa fa-edit"></i></a> |
+                    <a asp-action="Details" class="btn btn-outline-info btn-sm" asp-route-id="@item.InstituteId"><i class="fas fa-home"></i></a> |
+                    <a asp-action="Delete" class="btn btn-outline-danger btn-sm" asp-route-id="@item.InstituteId"><i class="fa fa-trash"></i></a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

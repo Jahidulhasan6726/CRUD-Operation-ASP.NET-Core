@@ -1,0 +1,37 @@
+﻿@model IEnumerable<CRUD.Models.Premise>
+<div class="row">
+    <div class="col">
+        <h2 class="display-4">Premises</h2>
+        <div class="d-flex justify-content-end">
+            <a asp-action="Create" asp-controller="Premises" class="btn btn-primary me-2"><i class="fa fa-plus"></i>Add New</a>
+        </div>
+        <table class="table table-bordered table-striped table-sm mt-2">
+            <thead class="table-primary">
+                <tr>
+                    <th>@Html.DisplayNameFor(x=>x.Institute)</th>
+                    <th>@Html.DisplayNameFor(x=>x.PrincipalName)</th>
+                    <th>@Html.DisplayNameFor(x=>x.Address)</th>
+                    <th>@Html.DisplayNameFor(x=>x.Phone)</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach(var item in Model)
+                {
+                    <tr>
+                        <td>@Html.DisplayFor(x=>item.Institute.InstituteName)</td>
+                        <td>@Html.DisplayFor(x=>item.PrincipalName)</td>
+                        <td>@Html.DisplayFor(x=>item.Address)</td>
+                        <td>@Html.DisplayFor(x=>item.Phone)</td>
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@item.PremiseId" class="btn btn-outline-success btn-sm"><i class="fa fa-edit"></i></a>
+                            <a asp-action="Delete"asp-route-id="@item.PremiseId" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+    </div>
+
+</div>

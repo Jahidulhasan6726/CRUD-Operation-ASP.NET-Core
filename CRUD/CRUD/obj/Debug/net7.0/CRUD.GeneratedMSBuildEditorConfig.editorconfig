@@ -1,0 +1,73 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = CRUD
+build_property.RootNamespace = CRUD
+build_property.ProjectDir = H:\.NET Core\all class prctc\CRUD_Prctc_form_class_03\CRUD\CRUD\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = H:\.NET Core\all class prctc\CRUD_Prctc_form_class_03\CRUD\CRUD
+build_property._RazorSourceGeneratorDebug = 
+
+[H:/.NET Core/all class prctc/CRUD_Prctc_form_class_03/CRUD/CRUD/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/.NET Core/all class prctc/CRUD_Prctc_form_class_03/CRUD/CRUD/Views/Institutes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdGl0dXRlc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/.NET Core/all class prctc/CRUD_Prctc_form_class_03/CRUD/CRUD/Views/Institutes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdGl0dXRlc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/.NET Core/all class prctc/CRUD_Prctc_form_class_03/CRUD/CRUD/Views/Institutes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdGl0dXRlc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/.NET Core/all class prctc/CRUD_Prctc_form_class_03/CRUD/CRUD/Views/Institutes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdGl0dXRlc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/.NET Core/all class prctc/CRUD_Prctc_form_class_03/CRUD/CRUD/Views/Institutes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdGl0dXRlc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/.NET Core/all class prctc/CRUD_Prctc_form_class_03/CRUD/CRUD/Views/Premises/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlbWlzZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/.NET Core/all class prctc/CRUD_Prctc_form_class_03/CRUD/CRUD/Views/Premises/DoDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlbWlzZXNcRG9EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/.NET Core/all class prctc/CRUD_Prctc_form_class_03/CRUD/CRUD/Views/Premises/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlbWlzZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/.NET Core/all class prctc/CRUD_Prctc_form_class_03/CRUD/CRUD/Views/Premises/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlbWlzZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/.NET Core/all class prctc/CRUD_Prctc_form_class_03/CRUD/CRUD/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/.NET Core/all class prctc/CRUD_Prctc_form_class_03/CRUD/CRUD/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/.NET Core/all class prctc/CRUD_Prctc_form_class_03/CRUD/CRUD/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/.NET Core/all class prctc/CRUD_Prctc_form_class_03/CRUD/CRUD/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

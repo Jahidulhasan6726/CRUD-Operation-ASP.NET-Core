@@ -1,0 +1,75 @@
+﻿@model CRUD.Models.Premise
+
+@{
+    ViewData["Title"] = "Create";
+}
+<h4> Add New Premise</h4>
+
+<div class="row">
+    <div class="col">
+        <form asp-action="Create" asp-controller="Premises">
+
+            <div class="row mb-2">
+                <label asp-for="PrincipalName" class="col-form-label col-2"> </label>
+                <div class="col-6">
+                    <input type="text" asp-for="PrincipalName" class="form-control" />
+                </div>
+                <div class="col-4">
+                    <span asp-validation-for="PrincipalName" class="text-danger"></span>
+                </div>
+            </div>
+
+
+            <div class="row mb-2">
+                <label asp-for="Address" class="col-form-label col-2"> </label>
+                <div class="col-6">
+                    <input type="text" asp-for="Address" class="form-control" />
+                </div>
+                <div class="col-4">
+                    <span asp-validation-for="Address" class="text-danger"></span>
+                </div>
+            </div>
+
+
+            <div class="row mb-2">
+                <label asp-for="Phone" class="col-form-label col-2"> </label>
+                <div class="col-6">
+                    <input type="text" asp-for="Phone" class="form-control" />
+                </div>
+                <div class="col-4">
+                    <span asp-validation-for="Phone" class="text-danger"></span>
+                </div>
+            </div>
+
+
+
+            <div class="row mb-2">
+                <label asp-for="InstituteId" class="col-form-label col-2"> </label>
+                <div class="col-6">
+                    <select class="form-select form-select-sm"
+                            asp-for="InstituteId" asp-items="@(new SelectList(ViewBag.institutes,"InstituteId","InstituteName"))">
+                        <option value="" selected>_Select_</option>
+                    </select>
+
+                </div>
+                <div class="col-4">
+                    <span asp-validation-for="InstituteId" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="row mb-2">
+                <div class="col-10 offset-2">
+                    <input type="submit" value="Save" class="btn btn btn-outline-success" />
+                </div>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-2 offset-2">
+        <a asp-action="Index" class="btn btn-outline-warning text-center">Back to List</a>
+    </div>
+</div>
+
